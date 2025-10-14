@@ -11,7 +11,7 @@
 		"lint": "eslint . --fix",
 		"format": "prettier --write .",
 		"type-check": "tsc --noEmit",
-		"validate": "npm run format && npm run lint && npm run type-check"
+		"verify": "npm run format && npm run lint && npm run type-check"
 	},
 	"dependencies": {
 		"expo": "54.0.13",

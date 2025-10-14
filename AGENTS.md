@@ -46,6 +46,23 @@
 5. [ ] Proceed with implementation
 6. [ ] Update PROGRESS.md with completion status
 
+## After Completing Major Development
+
+**All agents must run verification after completing major development work:**
+
+**Mandatory verification step for all major development:**
+- **Run `npm run verify`** immediately after completing any major development task
+- **This verification is required** before considering development work complete
+- **Do not skip this step** - verification ensures code quality and catches potential issues
+- **Update PROGRESS.md** with verification results and any issues found
+
+**Verification includes:**
+- Code linting and formatting checks
+- Type checking (if applicable)
+- Test execution (if tests exist)
+- Build verification
+- Any other project-specific validation steps
+
 ## Documentation Updates
 
 **When updating documentation:**
