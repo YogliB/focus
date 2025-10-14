@@ -8,9 +8,15 @@ This meditation application follows a modern, component-based architecture desig
 
 ### 1. Component-Based Design
 
-- **Atomic Design Methodology**: Components are organized following atomic design principles (atoms, molecules, organisms, templates, pages)
-- **Reusability**: Shared components reduce code duplication and ensure consistency
-- **Separation of Concerns**: Each component has a single responsibility
+- **Atomic Design Methodology**: Components are organized following atomic design principles with five distinct levels:
+    - **Atoms**: Basic building blocks that can't be broken down further (Button, Text, Icon, Input)
+    - **Molecules**: Simple combinations of atoms that form functional units (Timer, ProgressBar, MeditationCard)
+    - **Organisms**: Complex UI components that combine molecules (MeditationSession, SettingsPanel, StatisticsView)
+    - **Templates**: Page-level layouts that define content structure (HomeScreen, SessionScreen, ProfileScreen)
+    - **Pages**: Specific instances of templates with real content and data
+- **Reusability**: Shared components reduce code duplication and ensure consistency across meditation features
+- **Separation of Concerns**: Each component has a single responsibility focused on meditation functionality
+- **Scalability**: New meditation features can be built by combining existing atomic components
 
 ### 2. State Management
 
@@ -28,18 +34,52 @@ This meditation application follows a modern, component-based architecture desig
 
 ```
 src/
-├── components/          # Reusable UI components
-│   ├── atoms/          # Basic building blocks (Button, Text, Icon)
-│   ├── molecules/      # Component combinations (Timer, ProgressBar)
-│   ├── organisms/      # Complex UI sections (MeditationSession, Settings)
-│   └── templates/      # Page-level layouts
+├── components/          # Reusable UI components organized by Atomic Design levels
+│   ├── atoms/          # Basic building blocks (Button, Text, Icon, Input)
+│   │   ├── Button.tsx      # Reusable button component with variants
+│   │   ├── Text.tsx        # Typography component with theme support
+│   │   ├── Icon.tsx        # Icon wrapper with proper sizing
+│   │   └── Input.tsx       # Text input for settings and preferences
+│   ├── molecules/      # Component combinations (Timer, ProgressBar, MeditationCard)
+│   │   ├── Timer.tsx       # Meditation timer display and controls
+│   │   ├── ProgressBar.tsx # Visual progress indicator
+│   │   └── MeditationCard.tsx # Meditation session preview card
+│   ├── organisms/      # Complex UI sections (MeditationSession, SettingsPanel)
+│   │   ├── MeditationSession.tsx # Complete meditation session interface
+│   │   ├── SettingsPanel.tsx     # User preferences and configuration
+│   │   └── StatisticsView.tsx    # Meditation statistics and progress
+│   └── templates/      # Page-level layouts (HomeScreen, SessionScreen)
+│       ├── HomeScreen.tsx        # Main dashboard layout
+│       └── SessionScreen.tsx     # Meditation session layout
 ├── screens/            # Screen components for navigation
 ├── navigation/         # Navigation configuration and types
-├── hooks/             # Custom React hooks
-├── utils/             # Utility functions and constants
-├── types/             # TypeScript type definitions
+├── hooks/             # Custom React hooks for meditation logic
+├── utils/             # Utility functions and meditation helpers
+├── types/             # TypeScript type definitions for meditation data
 └── styles/            # Global styles and theme configuration
 ```
+
+## Atomic Design Benefits for Meditation App
+
+The Atomic Design methodology provides specific advantages for this meditation application:
+
+### Development Efficiency
+
+- **Rapid Feature Development**: New meditation features can be built by assembling existing atoms and molecules
+- **Consistent User Experience**: Unified design language across all meditation interfaces
+- **Easy Maintenance**: Changes to basic components (atoms) automatically propagate to all meditation features
+
+### Meditation-Focused Design
+
+- **Distraction-Free Components**: Each atomic component is designed to support focused meditation experiences
+- **Progressive Enhancement**: Complex meditation features are built from simple, tested building blocks
+- **Accessibility First**: Atomic components include proper labeling and screen reader support from the start
+
+### Team Collaboration
+
+- **Clear Component Boundaries**: Developers can work on meditation features independently without conflicts
+- **Design System Consistency**: Designers and developers share the same component vocabulary
+- **Scalable Architecture**: New meditation techniques and features can be added without restructuring
 
 ## Key Design Decisions
 
