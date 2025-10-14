@@ -6,12 +6,12 @@
 
 1. **Always consult existing documentation** before making any changes or implementing new features
 2. **Review all relevant docs** in the `/docs` directory, especially:
-   - `README.md` - Project overview and setup
-   - `PROGRESS.md` - Current status and recent updates
-   - `ARCHITECTURE.md` - System design and structure
-   - `CONTRIBUTING.md` - Guidelines for contributions
-   - `SETUP.md` - Development environment setup
-   - `TECHNOLOGIES.md` - Technology stack and dependencies
+    - `README.md` - Project overview and setup
+    - `PROGRESS.md` - Current status and recent updates
+    - `ARCHITECTURE.md` - System design and structure
+    - `CONTRIBUTING.md` - Guidelines for contributions
+    - `SETUP.md` - Development environment setup
+    - `TECHNOLOGIES.md` - Technology stack and dependencies
 
 ## PROGRESS.md Requirement
 

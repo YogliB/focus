@@ -12,6 +12,7 @@ Before you begin, ensure you have the following installed:
 ### Installing Node.js
 
 **macOS:**
+
 ```bash
 # Using Homebrew
 brew install node
@@ -20,6 +21,7 @@ brew install node
 ```
 
 **Linux:**
+
 ```bash
 # Using NodeSource repository
 curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
@@ -62,6 +64,7 @@ yarn install
 ```
 
 This will install all required dependencies including:
+
 - React Native and Expo
 - NativeWind for styling
 - Tamagui for UI components
@@ -94,18 +97,21 @@ This will start the Metro bundler and display a QR code.
 ### Running on Devices
 
 **iOS Simulator:**
+
 ```bash
 # Press 'i' in the terminal
 # Or scan QR code with Camera app
 ```
 
 **Android Emulator:**
+
 ```bash
 # Press 'a' in the terminal
 # Or scan QR code with Expo Go app
 ```
 
 **Physical Device:**
+
 1. Install [Expo Go](https://expo.dev/client) app
 2. Scan the QR code displayed in terminal
 3. App will load on your device
@@ -131,6 +137,7 @@ npm run test
 ### Creating Production Builds
 
 **iOS:**
+
 ```bash
 # Build for iOS
 npx expo build:ios
@@ -140,6 +147,7 @@ npx eas build --platform ios
 ```
 
 **Android:**
+
 ```bash
 # Build for Android
 npx expo build:android
@@ -151,12 +159,14 @@ npx eas build --platform android
 ### Submitting to App Stores
 
 **App Store (iOS):**
+
 ```bash
 # Submit to App Store
 npx expo submit --platform ios
 ```
 
 **Google Play (Android):**
+
 ```bash
 # Submit to Google Play
 npx expo submit --platform android
@@ -167,6 +177,7 @@ npx expo submit --platform android
 ### Common Issues
 
 **Metro bundler not starting:**
+
 ```bash
 # Clear Metro cache
 npx expo start --clear
@@ -176,6 +187,7 @@ npm cache clean --force
 ```
 
 **Dependency issues:**
+
 ```bash
 # Delete node_modules and reinstall
 rm -rf node_modules package-lock.json
@@ -183,12 +195,14 @@ npm install
 ```
 
 **iOS Simulator issues:**
+
 ```bash
 # Reset iOS Simulator
 # iOS Simulator > Device > Erase All Content and Settings
 ```
 
 **Android Emulator issues:**
+
 ```bash
 # Wipe emulator data
 # In Android Studio: Tools > AVD Manager > Wipe Data
@@ -223,6 +237,7 @@ The project uses Husky with lint-staged to run quality checks before commits:
 ### IDE Setup
 
 **VS Code (Recommended):**
+
 1. Install [ESLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 2. Install [Prettier extension](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 3. Enable format on save in settings

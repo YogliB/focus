@@ -18,6 +18,7 @@ A simple, elegant meditation application designed to support your mindfulness pr
 ## 🚀 Quick Start
 
 ### Prerequisites
+
 - Node.js (LTS version)
 - Expo CLI
 - Git
@@ -37,6 +38,7 @@ npx expo start
 ```
 
 Then run on your device:
+
 - **iOS**: Press `i` in the terminal or scan the QR code
 - **Android**: Press `a` in the terminal or scan the QR code
 
