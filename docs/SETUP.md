@@ -15,6 +15,16 @@ Before you begin, ensure you have the following installed:
 
 For comprehensive installation instructions and advanced configuration options, visit the [official Volta documentation](https://docs.volta.sh/guide/getting-started).
 
+To set up the project with Volta:
+
+```bash
+# Run prepare script first (sets up Husky hooks and project configuration)
+npm run prepare
+
+# Then install dependencies
+npm install
+```
+
 ### Alternative Node.js Installation Methods
 
 If you prefer not to use Volta, you can install Node.js directly:
