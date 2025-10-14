@@ -35,6 +35,8 @@
 
 ## Before Starting Work
 
+**Keep asking clarifying questions until it is at least 90% sure of the requirements or context before proceeding with any actions.**
+
 **Mandatory checklist for all agents:**
 
 1. [ ] Read current PROGRESS.md
