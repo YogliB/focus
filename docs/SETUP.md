@@ -13,13 +13,52 @@ Before you begin, ensure you have the following installed:
 
 **Volta** is a fast Node.js version manager that makes it easy to install and switch between different Node.js versions. This project uses Volta to ensure consistent Node.js versions across different development environments.
 
+For comprehensive installation instructions and advanced configuration options, visit the [official Volta documentation](https://docs.volta.sh/guide/getting-started).
+
+#### Quick Setup (Recommended)
+
+The simplest way to get started with Volta is using the setup command, which automatically configures your shell:
+
+**macOS & Linux:**
+
+```bash
+# Install and setup Volta in one command
+curl https://get.volta.sh | bash
+
+# Run the setup to configure your shell automatically
+volta setup
+
+# Verify installation
+node --version  # Should show v22.20.0 or similar LTS version
+volta --version  # Should show 2.0.0 or later
+```
+
+**Windows:**
+
+```bash
+# Install Volta using PowerShell (as Administrator)
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+irm https://get.volta.sh | iex
+
+# Setup Volta to configure your shell
+volta setup
+
+# Verify installation
+node --version  # Should show v22.20.0 or similar LTS version
+volta --version  # Should show 2.0.0 or later
+```
+
+#### Manual Installation (Alternative)
+
+If you prefer manual control over the installation process:
+
 **macOS & Linux:**
 
 ```bash
 # Install Volta
 curl https://get.volta.sh | bash
 
-# Restart your terminal or source the profile
+# Manually source the profile
 source ~/.bashrc  # or your shell's profile
 
 # Install Node.js LTS version
