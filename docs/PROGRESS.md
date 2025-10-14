@@ -67,6 +67,16 @@ Focus is a meditation application designed to provide a clean, distraction-free 
     - Assets and icons prepared for branding
     - Configuration files properly set up
 
+#### 6. **Documentation Consistency**
+
+- **Status**: ✅ Complete
+- **Updated Date**: October 14, 2025
+- **Agent**: Documentation Specialist (docs-supernova)
+- **Completion Summary**: Volta usage documentation standardized across all files
+- **Issue Found**: SETUP.md lacked Volta installation instructions despite project using Volta for Node.js version management
+- **Resolution**: Added comprehensive Volta installation section to SETUP.md with platform-specific instructions
+- **Impact**: Ensures consistent development environment setup and eliminates confusion for new contributors
+
 ### 🚧 In Progress
 
 #### 1. **Core Application Implementation**

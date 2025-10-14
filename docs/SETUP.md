@@ -4,12 +4,50 @@
 
 Before you begin, ensure you have the following installed:
 
-- **Node.js** (LTS version recommended)
+- **Node.js** (LTS version recommended, managed via Volta)
 - **npm** (comes with Node.js) or **yarn**
 - **Git** for version control
 - **Expo CLI** for development
 
-### Installing Node.js
+### Installing Node.js with Volta (Recommended)
+
+**Volta** is a fast Node.js version manager that makes it easy to install and switch between different Node.js versions. This project uses Volta to ensure consistent Node.js versions across different development environments.
+
+**macOS & Linux:**
+
+```bash
+# Install Volta
+curl https://get.volta.sh | bash
+
+# Restart your terminal or source the profile
+source ~/.bashrc  # or your shell's profile
+
+# Install Node.js LTS version
+volta install node@lts
+
+# Verify installation
+node --version  # Should show v22.20.0 or similar LTS version
+volta --version  # Should show 2.0.0 or later
+```
+
+**Windows:**
+
+```bash
+# Install Volta using PowerShell (as Administrator)
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+irm https://get.volta.sh | iex
+
+# Install Node.js LTS version
+volta install node@lts
+
+# Verify installation
+node --version  # Should show v22.20.0 or similar LTS version
+volta --version  # Should show 2.0.0 or later
+```
+
+### Alternative Node.js Installation Methods
+
+If you prefer not to use Volta, you can install Node.js directly:
 
 **macOS:**
 
