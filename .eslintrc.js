@@ -3,10 +3,16 @@ module.exports = {
 	extends: [
 		'@react-native',
 		'plugin:@typescript-eslint/recommended',
-		'prettier',
+		'plugin:prettier/recommended',
 	],
 	parser: '@typescript-eslint/parser',
-	plugins: ['@typescript-eslint', 'react', 'react-native', 'react-hooks'],
+	plugins: [
+		'@typescript-eslint',
+		'react',
+		'react-native',
+		'react-hooks',
+		'prettier',
+	],
 	overrides: [
 		{
 			files: ['*.ts', '*.tsx'],
