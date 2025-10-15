@@ -1,53 +1,48 @@
 {
-  "name": "focus",
-  "version": "0.0.0",
-  "main": "index.ts",
-  "scripts": {
-    "prepare": "volta setup && husky",
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web",
-    "lint": "eslint . --fix",
-    "format": "prettier --write .",
-    "type-check": "tsc --noEmit",
-    "verify": "npm run format && npm run lint && npm run type-check",
-    "start-storybook": "storybook dev --port 6006",
-    "build-storybook": "storybook build"
-  },
-  "dependencies": {
-    "@react-native-community/datetimepicker": "8.4.4",
-    "@react-native-community/slider": "5.0.1",
-    "expo": "54.0.13",
-    "expo-status-bar": "3.0.8",
-    "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "react-native": "0.81.4",
-    "react-native-web": "0.21.0"
-  },
-  "devDependencies": {
-    "@eslint/js": "9.37.0",
-    "@storybook/addon-ondevice-actions": "9.1.4",
-    "@storybook/addon-ondevice-controls": "9.1.4",
-    "@storybook/builder-webpack5": "9.1.10",
-    "@storybook/react-native": "9.1.4",
-    "@types/react": "~19.1.0",
-    "eslint": "9.37.0",
-    "eslint-config-expo": "10.0.0",
-    "eslint-config-prettier": "10.1.8",
-    "eslint-plugin-prettier": "5.5.4",
-    "husky": "9.1.7",
-    "lint-staged": "16.2.4",
-    "prettier": "3.6.2",
-    "typescript": "5.9.3",
-    "typescript-eslint": "8.46.1",
-    "webpack": "5.102.1"
-  },
-  "lint-staged": {
-    "*.{js,ts,tsx}": "eslint --fix --cache"
-  },
-  "private": true,
-  "volta": {
-    "node": "22.20.0"
-  }
+	"name": "focus",
+	"version": "0.0.0",
+	"main": "index.ts",
+	"scripts": {
+		"prepare": "volta setup && husky",
+		"start": "expo start",
+		"android": "expo start --android",
+		"ios": "expo start --ios",
+		"web": "expo start --web",
+		"lint": "eslint . --fix",
+		"format": "prettier --write .",
+		"type-check": "tsc --noEmit",
+		"verify": "npm run format && npm run lint && npm run type-check"
+	},
+	"dependencies": {
+		"@react-native-community/datetimepicker": "8.4.4",
+		"@react-native-community/slider": "5.0.1",
+		"expo": "54.0.13",
+		"expo-status-bar": "3.0.8",
+		"react": "19.1.0",
+		"react-dom": "19.1.0",
+		"react-native": "0.81.4",
+		"react-native-web": "0.21.0"
+	},
+	"devDependencies": {
+		"@eslint/js": "9.37.0",
+		"@storybook/react-native": "9.1.4",
+		"@types/react": "~19.1.0",
+		"eslint": "9.37.0",
+		"eslint-config-expo": "10.0.0",
+		"eslint-config-prettier": "10.1.8",
+		"eslint-plugin-prettier": "5.5.4",
+		"husky": "9.1.7",
+		"lint-staged": "16.2.4",
+		"prettier": "3.6.2",
+		"typescript": "5.9.3",
+		"typescript-eslint": "8.46.1",
+		"webpack": "5.102.1"
+	},
+	"lint-staged": {
+		"*.{js,ts,tsx}": "eslint --fix --cache"
+	},
+	"private": true,
+	"volta": {
+		"node": "22.20.0"
+	}
 }
