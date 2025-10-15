@@ -1,9 +1,9 @@
 {
-    "editor.formatOnSave": true,
-    "eslint.format.enable": true,
-    "github.copilot.chat.commitMessageGeneration.instructions": [
-        {
-            "file": ".copilot-commit-message-instructions.md"
-        }
-    ]
+	"editor.formatOnSave": true,
+	"eslint.format.enable": true,
+	"github.copilot.chat.commitMessageGeneration.instructions": [
+		{
+			"file": ".copilot-commit-message-instructions.md"
+		}
+	]
 }
