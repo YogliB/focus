@@ -12,7 +12,7 @@
     "format": "prettier --write .",
     "type-check": "tsc --noEmit",
     "verify": "npm run format && npm run lint && npm run type-check",
-    "storybook": "storybook dev --port 6006",
+    "start-storybook": "storybook dev --port 6006",
     "build-storybook": "storybook build"
   },
   "dependencies": {
