@@ -199,18 +199,21 @@ MCP (Model Context Protocol) servers provide powerful tools to enhance your deve
 **Purpose**: Access extended project context and external intelligence via `https://mcp.context7.com/mcp`.
 
 **When to Use**:
+
 - When you need to understand complex codebase relationships
 - Research and analysis of external libraries or APIs
 - Getting contextual information about technologies or frameworks
 - Understanding best practices for specific implementations
 
 **Development Enhancement**:
+
 - Provides intelligent code suggestions based on project context
 - Helps identify potential issues before implementation
 - Offers insights into similar projects and patterns
 - Accelerates research and decision-making processes
 
 **Example Usage**:
+
 ```bash
 # When researching React Native performance optimization
 # Context7 can provide relevant patterns and best practices
@@ -221,18 +224,21 @@ MCP (Model Context Protocol) servers provide powerful tools to enhance your deve
 **Purpose**: Retrieve external data or resources via `mcp/fetch`.
 
 **When to Use**:
+
 - When you need to fetch external APIs or data sources
 - Integrating with third-party services
 - Retrieving configuration files or resources
 - Testing external integrations
 
 **Development Enhancement**:
+
 - Simplifies API testing and integration
 - Provides real-time data for development and testing
 - Enables quick validation of external dependencies
 - Supports both development and testing workflows
 
 **Example Usage**:
+
 ```bash
 # When integrating with a weather API for a meditation app feature
 # Fetch can help retrieve and test real weather data
@@ -243,18 +249,21 @@ MCP (Model Context Protocol) servers provide powerful tools to enhance your deve
 **Purpose**: Perform browser automation or end-to-end verification via `mcp/playwright`.
 
 **When to Use**:
+
 - Testing user interactions and workflows
 - Cross-browser compatibility testing
 - End-to-end feature validation
 - Automated screenshot and visual regression testing
 
 **Development Enhancement**:
+
 - Enables comprehensive testing of user-facing features
 - Provides automated quality assurance
 - Supports continuous integration workflows
 - Helps catch UI/UX issues early in development
 
 **Example Usage**:
+
 ```bash
 # When adding a new meditation timer feature
 # Playwright can automate testing of the timer UI and interactions
@@ -265,18 +274,21 @@ MCP (Model Context Protocol) servers provide powerful tools to enhance your deve
 **Purpose**: Engage advanced reasoning and multi-step task decomposition via `mcp/sequentialthinking`.
 
 **When to Use**:
+
 - Breaking down complex features into manageable tasks
 - Planning complex implementations
 - Analyzing architecture decisions
 - Problem-solving and debugging complex issues
 
 **Development Enhancement**:
+
 - Helps structure complex development tasks
 - Provides systematic approach to problem-solving
 - Assists in creating comprehensive implementation plans
 - Supports architectural decision-making
 
 **Example Usage**:
+
 ```bash
 # When planning a major feature like user authentication
 # SequentialThinking can help break down the implementation into logical steps
@@ -287,15 +299,15 @@ MCP (Model Context Protocol) servers provide powerful tools to enhance your deve
 #### General Best Practices
 
 1. **Documentation**: Always document MCP server usage in `PROGRESS.md` including:
-   - MCP server name
-   - Purpose of the call
-   - Outcome or insights gained
+    - MCP server name
+    - Purpose of the call
+    - Outcome or insights gained
 
 2. **Appropriate Usage**: Use MCP servers when they genuinely enhance your work:
-   - For research and planning phases
-   - When stuck on complex problems
-   - For quality assurance and testing
-   - When learning new technologies or patterns
+    - For research and planning phases
+    - When stuck on complex problems
+    - For quality assurance and testing
+    - When learning new technologies or patterns
 
 3. **Configuration**: Do not modify or redeploy MCP server configurations. Use existing definitions only.
 
@@ -311,6 +323,7 @@ MCP servers work best when integrated into your natural development process:
 ### Getting Help
 
 When using MCP servers:
+
 - Check existing `PROGRESS.md` entries for similar usage patterns
 - Document your own usage for future contributors
 - Ask questions in issues if you need clarification on specific use cases

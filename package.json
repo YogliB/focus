@@ -11,7 +11,9 @@
 		"lint": "eslint . --fix",
 		"format": "prettier --write .",
 		"type-check": "tsc --noEmit",
-		"verify": "npm run format && npm run lint && npm run type-check"
+		"verify": "npm run format && npm run lint && npm run type-check",
+		"storybook": "storybook dev --port 6006",
+		"build-storybook": "storybook build"
 	},
 	"dependencies": {
 		"expo": "54.0.13",
@@ -24,6 +26,10 @@
 	"devDependencies": {
 		"@eslint/js": "9.37.0",
 		"@react-native/eslint-config": "0.82.0",
+		"@storybook/addon-ondevice-actions": "9.1.4",
+		"@storybook/addon-ondevice-controls": "9.1.4",
+		"@storybook/builder-webpack5": "9.1.10",
+		"@storybook/react-native": "9.1.4",
 		"@types/react": "~19.1.0",
 		"eslint": "9.37.0",
 		"eslint-config-expo": "10.0.0",
@@ -33,7 +39,8 @@
 		"lint-staged": "16.2.4",
 		"prettier": "3.6.2",
 		"typescript": "5.9.3",
-		"typescript-eslint": "8.46.1"
+		"typescript-eslint": "8.46.1",
+		"webpack": "5.102.1"
 	},
 	"lint-staged": {
 		"*.{js,ts,tsx}": "eslint --fix --cache"
